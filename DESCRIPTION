@@ -1,0 +1,13 @@
+Package: dashNivo
+Title: nivo integration for plotly
+Version: 0.0.1
+Description: nivo integration for plotly
+Depends: R (>= 3.0.2)
+Imports: 
+Suggests: 
+License: MIT + file LICENSE
+URL: https://github.com/pip-install-python/dash-nivo
+BugReports: https://github.com/pip-install-python/dash-nivo/issues
+Encoding: UTF-8
+LazyData: true
+KeepSource: true

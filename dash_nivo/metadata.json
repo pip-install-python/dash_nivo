@@ -1,0 +1,346 @@
+{
+  "src/lib/components/AreaBump.react.js": {
+    "description": "",
+    "displayName": "AreaBump",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": ""
+      },
+      "data": {
+        "type": {
+          "name": "array"
+        },
+        "required": true,
+        "description": ""
+      },
+      "margin": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "{ top: 40, right: 100, bottom: 40, left: 100 }",
+          "computed": false
+        }
+      },
+      "spacing": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "8",
+          "computed": false
+        }
+      },
+      "colors": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "object"
+            },
+            {
+              "name": "func"
+            }
+          ]
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "{ scheme: 'nivo' }",
+          "computed": false
+        }
+      },
+      "blendMode": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "'multiply'",
+          "computed": false
+        }
+      },
+      "defs": {
+        "type": {
+          "name": "array"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "[\n    {\n        id: 'dots',\n        type: 'patternDots',\n        background: 'inherit',\n        color: '#38bcb2',\n        size: 4,\n        padding: 1,\n        stagger: true\n    },\n    {\n        id: 'lines',\n        type: 'patternLines',\n        background: 'inherit',\n        color: '#eed312',\n        rotation: -45,\n        lineWidth: 6,\n        spacing: 10\n    }\n]",
+          "computed": false
+        }
+      },
+      "fill": {
+        "type": {
+          "name": "array"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "[\n    {\n        match: {\n            id: 'CoffeeScript'\n        },\n        id: 'dots'\n    },\n    {\n        match: {\n            id: 'TypeScript'\n        },\n        id: 'lines'\n    }\n]",
+          "computed": false
+        }
+      },
+      "startLabel": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "func"
+            }
+          ]
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "'id'",
+          "computed": false
+        }
+      },
+      "endLabel": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "func"
+            }
+          ]
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "'id'",
+          "computed": false
+        }
+      },
+      "axisTop": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "{\n    tickSize: 5,\n    tickPadding: 5,\n    tickRotation: 0,\n    legend: '',\n    legendPosition: 'middle',\n    legendOffset: -36,\n    truncateTickAt: 0\n}",
+          "computed": false
+        }
+      },
+      "axisBottom": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "{\n    tickSize: 5,\n    tickPadding: 5,\n    tickRotation: 0,\n    legend: '',\n    legendPosition: 'middle',\n    legendOffset: 32,\n    truncateTickAt: 0\n}",
+          "computed": false
+        }
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
+      },
+      "clickedPoint": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      }
+    }
+  },
+  "src/lib/components/ResponsiveCircle.react.js": {
+    "description": "",
+    "displayName": "ResponsiveCircle",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": ""
+      },
+      "data": {
+        "type": {
+          "name": "object"
+        },
+        "required": true,
+        "description": ""
+      },
+      "margin": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "{ top: 20, right: 20, bottom: 20, left: 20 }",
+          "computed": false
+        }
+      },
+      "colors": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "{ scheme: 'nivo' }",
+          "computed": false
+        }
+      },
+      "childColor": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "{\n    from: 'color',\n    // eslint-disable-next-line no-magic-numbers\n    modifiers: [['brighter', 0.4]]\n}",
+          "computed": false
+        }
+      },
+      "padding": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "4",
+          "computed": false
+        }
+      },
+      "enableLabels": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "true",
+          "computed": false
+        }
+      },
+      "labelsFilter": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "label => label.node.height === 0",
+          "computed": false
+        }
+      },
+      "labelsSkipRadius": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "16",
+          "computed": false
+        }
+      },
+      "labelTextColor": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "{\n    from: 'color',\n    modifiers: [['darker', 2]]\n}",
+          "computed": false
+        }
+      },
+      "borderWidth": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "1",
+          "computed": false
+        }
+      },
+      "borderColor": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "{\n    from: 'color',\n    modifiers: [['darker', 0.5]]\n}",
+          "computed": false
+        }
+      },
+      "defs": {
+        "type": {
+          "name": "array"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "[{\n    id: 'lines',\n    type: 'patternLines',\n    background: 'none',\n    color: 'inherit',\n    rotation: -45,\n    lineWidth: 5,\n    spacing: 8\n}]",
+          "computed": false
+        }
+      },
+      "fill": {
+        "type": {
+          "name": "array"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "[{\n    match: { depth: 1 },\n    id: 'lines'\n}]",
+          "computed": false
+        }
+      },
+      "motionConfig": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "'slow'",
+          "computed": false
+        }
+      },
+      "zoomedId": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": ""
+      }
+    }
+  }
+}

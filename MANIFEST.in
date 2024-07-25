@@ -1,0 +1,11 @@
+include dash_nivo/dash_nivo.min.js
+include dash_nivo/dash_nivo.min.js.map
+include dash_nivo/async-*.js
+include dash_nivo/async-*.js.map
+include dash_nivo/*-shared.js
+include dash_nivo/*-shared.js.map
+include dash_nivo/metadata.json
+include dash_nivo/package-info.json
+include README.md
+include LICENSE
+include package.json
